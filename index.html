@@ -4,11 +4,39 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
   <title>Document</title>
+  
 </head>
 <body>
-  <p>1</p>
-  <p>2</p>
-  <p>3</p>
+  <script>
+//Первое - Канада
+const scores = [
+[3, 3],
+    [4, 1],
+    [5, 8],
+    [5, 5],
+    [2, 3],
+    [2, 5],
+    [4, 4],
+    [4, 3],
+];
+  
+
+const getSuperSeriesWinner = (gameScore) => {
+  let countScore = 0;
+  let result = '';
+  // for (let i = 0; i < gameScore.length; i += 1) {
+  //   const getWinner = Math.sign(gameScore[i][0] - gameScore[i][1]);
+    for (const getWinner of gameScore) {
+        result = console.log(getWinner[1]);  
+    
+    
+  }
+  return result
+};
+getSuperSeriesWinner(scores)
+
+  </script>
 </body>
 </html>
